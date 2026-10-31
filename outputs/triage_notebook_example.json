@@ -1,0 +1,93 @@
+{
+  "sample_id": "row_031534",
+  "verdict": "benign",
+  "probability_ransomware": 0.054099,
+  "top_features": [
+    {
+      "rank": 1,
+      "name": "handles.nmutant",
+      "value": 282.0,
+      "shap": -0.7460216283798218,
+      "direction": "toward_benign",
+      "percentile_vs_train": 47.75,
+      "train_median": 296.0,
+      "z_score": -0.4267351379070083,
+      "description": "Number of open mutant (mutex) handles.",
+      "qualitative_level": "typical"
+    },
+    {
+      "rank": 2,
+      "name": "malfind.ninjections",
+      "value": 78.0,
+      "shap": -0.6224198937416077,
+      "direction": "toward_benign",
+      "percentile_vs_train": 99.0283185840708,
+      "train_median": 4.0,
+      "z_score": 4.280307543337236,
+      "description": "Number of memory regions flagged as injected/executable-writable anomalies (Volatility malfind).",
+      "qualitative_level": "very_high"
+    },
+    {
+      "rank": 3,
+      "name": "handles.ntimer",
+      "value": 129.0,
+      "shap": -0.5753052234649658,
+      "direction": "toward_benign",
+      "percentile_vs_train": 48.0,
+      "train_median": 131.0,
+      "z_score": -0.09799931438405021,
+      "description": "Number of open timer handles.",
+      "qualitative_level": "typical"
+    },
+    {
+      "rank": 4,
+      "name": "pslist.avg_threads",
+      "value": 7.548387050628662,
+      "shap": 0.5067759156227112,
+      "direction": "toward_ransomware",
+      "percentile_vs_train": 0.7924719321301983,
+      "train_median": 11.016520500183105,
+      "z_score": -2.410028892949975,
+      "description": "Average number of threads per process in the process list.",
+      "qualitative_level": "very_low"
+    },
+    {
+      "rank": 5,
+      "name": "handles.nfile",
+      "value": 681.0,
+      "shap": -0.4160720705986023,
+      "direction": "toward_benign",
+      "percentile_vs_train": 43.968992248062044,
+      "train_median": 842.5,
+      "z_score": -0.056687130748995555,
+      "description": "Number of open file handles.",
+      "qualitative_level": "typical"
+    },
+    {
+      "rank": 6,
+      "name": "malfind.commitCharge",
+      "value": 9215.0,
+      "shap": 0.37001192569732666,
+      "direction": "toward_ransomware",
+      "percentile_vs_train": 95.4891935216406,
+      "train_median": 4.0,
+      "z_score": 1.3363803705913195,
+      "description": "Committed (allocated) bytes across regions flagged as injections.",
+      "qualitative_level": "very_high"
+    }
+  ],
+  "explanation": {
+    "mode": "template",
+    "text": "The classifier predicts benign with probability 0.054. handles.nmutant is typical compared with training data (value 282.0, 48th percentile), which pushed the decision toward benign. malfind.ninjections is very_high compared with training data (value 78.0, 99th percentile), which pushed the decision toward benign. handles.ntimer is typical compared with training data (value 129.0, 48th percentile), which pushed the decision toward benign. pslist.avg_threads is very_low compared with training data (value 7.55, 1th percentile), which pushed the decision toward ransomware. handles.nfile is typical compared with training data (value 681.0, 44th percentile), which pushed the decision toward benign. malfind.commitCharge is very_high compared with training data (value 9,215, 95th percentile), which pushed the decision toward ransomware."
+  },
+  "faithfulness": {
+    "FS": 1.0,
+    "FS_pass": true,
+    "claim_precision": 1.0,
+    "status_counts": {
+      "supported": 6,
+      "unsupported": 0,
+      "contradicted": 0
+    }
+  }
+}

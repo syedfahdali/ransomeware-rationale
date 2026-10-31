@@ -1,0 +1,114 @@
+[
+  {
+    "phase": "phase1/3",
+    "name": "eval set selected",
+    "passed": true,
+    "details": "n=50 composition={'tp': 20, 'tn': 15, 'fn': 8, 'fp': 7}",
+    "checked_at": "2026-10-10T16:59:06+00:00"
+  },
+  {
+    "phase": "phase3",
+    "name": "SHAP additivity <= 1e-3",
+    "passed": true,
+    "details": "max|sum(shap)+base-margin|=6.70e-06",
+    "checked_at": "2026-10-10T16:59:11+00:00"
+  },
+  {
+    "phase": "phase3",
+    "name": "evidence JSON validates against schema",
+    "passed": true,
+    "details": "50 files, 0 invalid",
+    "checked_at": "2026-10-10T16:59:11+00:00"
+  },
+  {
+    "phase": "phase2",
+    "name": "test ROC-AUC >= 0.95",
+    "passed": false,
+    "details": "ROC-AUC=0.92726 on a group-aware (capture-level, leakage-free) split; the spec threshold assumes the usual near-duplicate-leaky split - see docs/DEVIATIONS.md #4 and models/metrics_rowlevel.json",
+    "checked_at": "2026-10-11T08:06:57+00:00"
+  },
+  {
+    "phase": "usage",
+    "name": "batch triage CLI ran",
+    "passed": true,
+    "details": "5 rows from data/raw/CIC-MalMem-2022.csv -> outputs/triage_smoke.csv",
+    "checked_at": "2026-10-11T08:07:14+00:00"
+  },
+  {
+    "phase": "phase6",
+    "name": "template arm FS >= 0.99",
+    "passed": true,
+    "details": "T FS=1.000",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "phase8",
+    "name": "repair before/after table produced",
+    "passed": true,
+    "details": "S2R FS=1.000; P0R FS=0.891",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "phase5",
+    "name": "agent_queue round trip used",
+    "passed": true,
+    "details": "LLM extractor fallback ran on agent_queue answers",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "laya",
+    "name": "laya_available_fallback",
+    "passed": true,
+    "details": "stage is a no-op: cfg.laya.enabled=false (opt in with `make setup-laya` then set laya.enabled: true, or pass --force)",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "laya",
+    "name": "laya_gate_latency",
+    "passed": true,
+    "details": "not applicable: the layer is disabled/absent",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "laya",
+    "name": "laya_fs_independence",
+    "passed": true,
+    "details": "not applicable: the layer is disabled/absent",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "laya",
+    "name": "laya_full_run_recorded",
+    "passed": true,
+    "details": "reference run in summary_full_run.json: 7 arms x 50 samples, median gate 4649 ms, LAR P0=0.931, P0R=0.990, P2=0.953, S2=1.000, S2R=1.000, T=0.997, X=0.387 (checkpoint typed-decisions, device cpu, zero-shot=True; last invocation overwrote summary.json)",
+    "checked_at": "2026-10-11T08:07:20+00:00"
+  },
+  {
+    "phase": "phase7",
+    "name": "perturbation detection recall >= 0.95",
+    "passed": true,
+    "details": "flip_direction=1.00, out_of_topk_feature=1.00, value_30pct=0.98, drop_top=1.00",
+    "checked_at": "2026-10-11T08:07:24+00:00"
+  },
+  {
+    "phase": "phase7",
+    "name": "corrupted-evidence control drops FS",
+    "passed": true,
+    "details": "S2 1.000 -> X 0.097 (drop 0.903)",
+    "checked_at": "2026-10-11T08:07:24+00:00"
+  },
+  {
+    "phase": "phase7",
+    "name": "extractor gold set produced",
+    "passed": true,
+    "details": "P0 P/R=0.43/0.22; P2 P/R=0.95/0.95",
+    "checked_at": "2026-10-11T08:07:24+00:00"
+  },
+  {
+    "phase": "usage",
+    "name": "single-sample triage CLI ran",
+    "passed": true,
+    "details": "test_031534: benign p=0.054, 6 evidence features, FS=1.000 (template)",
+    "checked_at": "2026-10-11T08:17:19+00:00"
+  }
+]

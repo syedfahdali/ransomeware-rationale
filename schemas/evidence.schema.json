@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evidence",
+  "type": "object",
+  "required": [
+    "sample_id", "verdict", "predicted_label", "probability_ransomware",
+    "threshold", "base_value", "top_features", "shap_mass_covered_by_top_k",
+    "k", "all_feature_names"
+  ],
+  "properties": {
+    "sample_id": {"type": "string"},
+    "verdict": {"enum": ["ransomware", "benign"]},
+    "predicted_label": {"type": "integer", "enum": [0, 1]},
+    "probability_ransomware": {"type": "number", "minimum": 0, "maximum": 1},
+    "threshold": {"type": "number"},
+    "base_value": {"type": "number"},
+    "k": {"type": "integer", "minimum": 1},
+    "shap_mass_covered_by_top_k": {"type": "number", "minimum": 0},
+    "all_feature_names": {"type": "array", "items": {"type": "string"}},
+    "top_features": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "rank", "name", "value", "shap", "direction",
+          "percentile_vs_train", "train_median", "z_score",
+          "description", "qualitative_level"
+        ],
+        "properties": {
+          "rank": {"type": "integer", "minimum": 1},
+          "name": {"type": "string"},
+          "value": {"type": "number"},
+          "shap": {"type": "number"},
+          "direction": {"enum": ["toward_ransomware", "toward_benign"]},
+          "percentile_vs_train": {"type": "number", "minimum": 0, "maximum": 100},
+          "train_median": {"type": "number"},
+          "z_score": {"type": "number"},
+          "description": {"type": "string"},
+          "qualitative_level": {"enum": ["very_low", "low", "typical", "high", "very_high"]}
+        }
+      }
+    }
+  }
+}

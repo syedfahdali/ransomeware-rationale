@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rationale",
+  "type": "object",
+  "required": ["verdict", "claims"],
+  "properties": {
+    "verdict": {"enum": ["ransomware", "benign"]},
+    "probability_stated": {"type": ["number", "null"]},
+    "confidence_statement": {"type": ["string", "null"]},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["feature", "direction", "text"],
+        "properties": {
+          "feature": {"type": "string"},
+          "direction": {"enum": ["toward_ransomware", "toward_benign"]},
+          "level": {"enum": ["very_low", "low", "typical", "high", "very_high", null]},
+          "value_stated": {"type": ["number", "null"]},
+          "text": {"type": "string"},
+          "extractor": {"enum": ["rules", "llm", "given", null]}
+        }
+      }
+    },
+    "summary": {"type": ["string", "null"]}
+  }
+}

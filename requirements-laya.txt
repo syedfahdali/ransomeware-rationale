@@ -1,0 +1,27 @@
+# OPTIONAL extras — the Laya decision-layer cross-check (docs/LAYA_REVIEW.md).
+#
+# Nothing in the core study needs these. The layer is diagnostic-only, OFF by
+# default (`laya.enabled: false`), and every entry point soft-fails to a no-op
+# when `laya` is absent, so `make all` and the test suite stay green without it.
+#
+# Install into the STUDY venv with `make setup-laya`, or keep the study venv
+# torch-free and use a separate interpreter (see docs/USAGE.md §7):
+#
+#   python3 -m venv .venv-laya
+#   .venv-laya/bin/pip install -r requirements-laya.txt
+#   .venv-laya/bin/python -m src.faithfulness.laya_gate --force
+#
+# NOTE ON SIZE: `pip install laya` on Linux also pulls the CUDA nvidia-* wheels
+# (several GB) even on a machine with no GPU. For a CPU-only host install torch
+# from the CPU wheel index first, then laya:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-laya.txt
+#
+# The checkpoints themselves (~421M params for `laya` / `laya-typed-decisions`,
+# ~322M for `laya-multilingual`) download from Hugging Face on first use; set
+# HF_HUB_CACHE to move that cache.
+laya>=0.4.2
+# loaded by the stage module to read configs/default.yaml
+pyyaml
+python-dotenv

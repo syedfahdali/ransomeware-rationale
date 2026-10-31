@@ -1,0 +1,6 @@
+sample_id,verdict,predicted_label,probability_ransomware,dataset_label,dataset_malware_class,family,correct,top_features,missing_features
+CIC-MalMem-2022#row0,benign,0,0.04110421000005908,benign,Benign,none,True,handles.nfile;dlllist.avg_dlls_per_proc;malfind.commitCharge;ldrmodules.not_in_mem;ldrmodules.not_in_init_avg;pslist.avg_handlers,0
+CIC-MalMem-2022#row1,benign,0,0.029110145632881647,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row2,benign,0,0.029110385679558246,benign,Benign,none,True,svcscan.nservices;handles.nsection;handles.nmutant;dlllist.avg_dlls_per_proc;pslist.avg_threads;psxview.not_in_deskthrd_false_avg,0
+CIC-MalMem-2022#row3,benign,0,0.029229490523497315,benign,Benign,none,True,svcscan.nservices;pslist.avg_threads;dlllist.avg_dlls_per_proc;handles.nsemaphore;svcscan.shared_process_services;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row4,benign,0,0.029109629793983762,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;ldrmodules.not_in_load_avg;handles.nmutant,0

@@ -1,0 +1,28 @@
+{
+  "generated_for": "Laya fine-tuning (proposal section 9)",
+  "independent_only": true,
+  "classifier_seed": 42,
+  "split_rule": "the classifier's own capture-group-aware train/val/test split",
+  "gate": {
+    "rows": 0,
+    "splits": {},
+    "label_provenance": {},
+    "independent_rows": 0
+  },
+  "claims": {
+    "rows": 90,
+    "splits": {
+      "test": 90
+    },
+    "label_provenance": {
+      "extractor_gold": 90
+    },
+    "independent_rows": 90,
+    "gold_covered_claims": 90,
+    "gold_uncovered_claims": 2,
+    "gold_nondirectional_claims": 3,
+    "circular_claims": 1524,
+    "candidate_claims_scanned": 1619
+  },
+  "circularity_warning": "Labels whose provenance is `classifier_verdict` (gate) or `rule_verifier` (claims) come from the very component the model is meant to cross-check. A cross-judge trained on them can only reproduce that component's errors; a gate trained on the classifier's verdict cannot disagree with the classifier. Group-aware splitting fixes train/test leakage, not label provenance circularity."
+}

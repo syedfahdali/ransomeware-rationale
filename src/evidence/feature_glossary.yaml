@@ -1,0 +1,182 @@
+# Feature glossary for CIC-MalMem-2022 (memory-forensics features from
+# Volatility-style plugins). These descriptions are the ONLY allowed semantic
+# source the rationale generator may use. They are deliberately neutral: they
+# say what is measured, not what it "proves".
+#
+# `aliases` are alternate surface forms used by the rule-based claim extractor.
+# Keep them distinctive (no bare words with several meanings).
+features:
+  pslist.nproc:
+    description: "Number of processes in the active process list (Volatility pslist)."
+    aliases: ["process count", "number of processes", "active processes"]
+  pslist.nppid:
+    description: "Number of distinct parent process IDs among the listed processes."
+    aliases: ["distinct parent processes", "parent process count"]
+  pslist.avg_threads:
+    description: "Average number of threads per process in the process list."
+    aliases: ["threads per process", "average threads"]
+  pslist.nprocs64bit:
+    description: "Number of 64-bit processes in the process list."
+    aliases: ["64-bit processes"]
+  pslist.avg_handlers:
+    description: "Average number of handles per process, as seen via the process list."
+    aliases: ["average handlers per process"]
+
+  dlllist.ndlls:
+    description: "Total number of DLLs loaded by all listed processes."
+    aliases: ["loaded dlls", "number of dlls", "dll count"]
+  dlllist.avg_dlls_per_proc:
+    description: "Average number of loaded DLLs per process."
+    aliases: ["dlls per process", "per-process dll count"]
+
+  handles.nhandles:
+    description: "Total number of open handles across all processes."
+    aliases: ["open handles", "total handles", "handle count"]
+  handles.avg_handles_per_proc:
+    description: "Average number of open handles per process."
+    aliases: ["handles per process", "average handles per process"]
+  handles.nport:
+    description: "Number of port objects among open handles (e.g. named pipes / ALPC ports)."
+    aliases: ["port handles"]
+  handles.nfile:
+    description: "Number of open file handles."
+    aliases: ["file handles"]
+  handles.nevent:
+    description: "Number of open event-object handles."
+    aliases: ["event handles"]
+  handles.ndesktop:
+    description: "Number of open desktop-object handles."
+    aliases: ["desktop handles"]
+  handles.nkey:
+    description: "Number of open registry-key handles."
+    aliases: ["registry key handles", "key handles"]
+  handles.nthread:
+    description: "Number of open thread handles."
+    aliases: ["thread handles"]
+  handles.ndirectory:
+    description: "Number of open directory-object handles."
+    aliases: ["directory handles"]
+  handles.nsemaphore:
+    description: "Number of open semaphore handles."
+    aliases: ["semaphore handles"]
+  handles.ntimer:
+    description: "Number of open timer handles."
+    aliases: ["timer handles"]
+  handles.nsection:
+    description: "Number of open section (memory-mapped) handles."
+    aliases: ["section handles"]
+  handles.nmutant:
+    description: "Number of open mutant (mutex) handles."
+    aliases: ["mutex handles", "mutant handles", "mutex handle count"]
+
+  ldrmodules.not_in_load:
+    description: "Modules mapped in memory but absent from the loader's load list (a known hiding indicator when nonzero)."
+    aliases: ["not in load list", "missing from load list"]
+  ldrmodules.not_in_init:
+    description: "Modules absent from the loader's initialization list."
+    aliases: ["not in init list", "missing from init list"]
+  ldrmodules.not_in_mem:
+    description: "Modules recorded in loader lists but no longer present in memory."
+    aliases: ["not in memory list", "missing from memory list"]
+  ldrmodules.not_in_load_avg:
+    description: "Average per process of modules absent from the load list."
+    aliases: ["load list inconsistency per process", "modules absent from the load list",
+              "per-process average of modules absent from the load list"]
+  ldrmodules.not_in_init_avg:
+    description: "Average per process of modules absent from the initialization list."
+    aliases: ["init list inconsistency per process"]
+  ldrmodules.not_in_mem_avg:
+    description: "Average per process of loader-listed modules missing from memory."
+    aliases: ["memory list inconsistency per process"]
+
+  malfind.ninjections:
+    description: "Number of memory regions flagged as injected/executable-writable anomalies (Volatility malfind)."
+    aliases: ["injections", "injected regions", "code injections"]
+  malfind.commitCharge:
+    description: "Committed (allocated) bytes across regions flagged as injections."
+    aliases: ["commit charge", "committed bytes", "committed memory"]
+  malfind.protection:
+    description: "Aggregate of memory protection flags on flagged injection regions."
+    aliases: ["memory protection", "protection flags"]
+  malfind.uniqueInjections:
+    description: "Number of distinct flagged injection regions."
+    aliases: ["unique injections", "distinct injections"]
+
+  psxview.not_in_pslist:
+    description: "Processes found by other scanning methods but absent from the active process list (a classic hidden-process signal when nonzero)."
+    aliases: ["not in pslist", "not in the process list", "hidden from process list"]
+  psxview.not_in_eprocess_pool:
+    description: "Processes visible in the linked list but not found in the EPROCESS pool scan."
+    aliases: ["not in eprocess pool", "missing from eprocess pool"]
+  psxview.not_in_ethread_pool:
+    description: "Processes not found via the ETHREAD pool scan."
+    aliases: ["not in ethread pool", "missing from ethread pool"]
+  psxview.not_in_pspcid_list:
+    description: "Processes not found via the PSPCid pool scan."
+    aliases: ["not in pspcid list", "missing from pspcid list"]
+  psxview.not_in_csrss_handles:
+    description: "Processes absent from csrss.exe handle lists."
+    aliases: ["not in csrss handles", "missing from csrss handles"]
+  psxview.not_in_session:
+    description: "Processes absent from their session's process list."
+    aliases: ["not in session list", "missing from session list"]
+  psxview.not_in_deskthrd:
+    description: "Threads absent from the desktop thread list."
+    aliases: ["not in deskthrd", "not in desktop thread list"]
+  psxview.not_in_pslist_false_avg:
+    description: "Average per process of benign cross-view mismatches in the pslist check."
+    aliases: ["pslist false mismatches per process"]
+  psxview.not_in_eprocess_pool_false_avg:
+    description: "Average per process of benign cross-view mismatches in the EPROCESS-pool check."
+    aliases: ["eprocess false mismatches per process"]
+  psxview.not_in_ethread_pool_false_avg:
+    description: "Average per process of benign cross-view mismatches in the ETHREAD-pool check."
+    aliases: ["ethread false mismatches per process"]
+  psxview.not_in_pspcid_list_false_avg:
+    description: "Average per process of benign cross-view mismatches in the PSPCid-list check."
+    aliases: ["pspcid false mismatches per process"]
+  psxview.not_in_csrss_handles_false_avg:
+    description: "Average per process of benign cross-view mismatches in the csrss-handle check."
+    aliases: ["csrss false mismatches per process"]
+  psxview.not_in_session_false_avg:
+    description: "Average per process of benign cross-view mismatches in the session-list check."
+    aliases: ["session false mismatches per process"]
+  psxview.not_in_deskthrd_false_avg:
+    description: "Average per process of benign cross-view mismatches in the deskthrd check."
+    aliases: ["deskthrd false mismatches per process"]
+
+  modules.nmodules:
+    description: "Number of kernel modules loaded in the memory image."
+    aliases: ["kernel modules", "loaded modules"]
+
+  svcscan.nservices:
+    description: "Total number of Windows services enumerated in the memory image."
+    aliases: ["number of services", "service count"]
+  svcscan.kernel_drivers:
+    description: "Number of kernel-driver services."
+    aliases: ["kernel drivers"]
+  svcscan.fs_drivers:
+    description: "Number of file-system driver services."
+    aliases: ["file-system drivers", "fs drivers"]
+  svcscan.process_services:
+    description: "Number of services running as processes rather than sharing a host process."
+    aliases: ["process services"]
+  svcscan.shared_process_services:
+    description: "Number of services sharing their host process with others."
+    aliases: ["shared process services", "services sharing their host process"]
+  svcscan.interactive_process_services:
+    description: "Number of service processes marked interactive (desktop-visible)."
+    aliases: ["interactive services"]
+  svcscan.nactive:
+    description: "Number of services in an active (running) state."
+    aliases: ["active services", "running services"]
+
+  callbacks.ncallbacks:
+    description: "Number of kernel callbacks registered in the image."
+    aliases: ["kernel callbacks", "registered callbacks"]
+  callbacks.nanonymous:
+    description: "Number of kernel callbacks whose owning module cannot be resolved."
+    aliases: ["anonymous callbacks"]
+  callbacks.ngeneric:
+    description: "Number of generic kernel callback entries."
+    aliases: ["generic callbacks"]

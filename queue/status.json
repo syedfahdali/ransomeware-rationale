@@ -1,0 +1,8 @@
+{
+  "n_unanswered_total": 0,
+  "n_in_active_batch": 0,
+  "batch_size": 25,
+  "responses_file": "/home/faddy/Desktop/githubrepos/ransomware-rationale/queue/responses.jsonl",
+  "requests_file": "/home/faddy/Desktop/githubrepos/ransomware-rationale/queue/requests.jsonl",
+  "updated_at": "2026-10-11T00:01:09+0500"
+}

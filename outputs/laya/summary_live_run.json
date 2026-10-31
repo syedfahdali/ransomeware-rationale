@@ -1,0 +1,48 @@
+{
+  "status": "ran",
+  "checkpoint": "typed-decisions",
+  "device": "cpu",
+  "arms_requested": [
+    "S2",
+    "P0",
+    "X"
+  ],
+  "arms_scored": [
+    "S2",
+    "P0",
+    "X"
+  ],
+  "limit_per_arm": 6,
+  "temperatures_file_found": false,
+  "zero_shot": true,
+  "note": "Zero-shot: no per-question temperature file was found, so these numbers are the raw checkpoint's, not a calibrated one. Diagnostic only -- see docs/LAYA_REVIEW.md. Latency is CPU.",
+  "arms": {
+    "S2": {
+      "n_samples": 6,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 1.0,
+      "LAR_strict": 1.0,
+      "n_claims_compared": 36,
+      "median_gate_latency_ms": 5656.811003995244
+    },
+    "P0": {
+      "n_samples": 6,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.9444444444444445,
+      "LAR_strict": 0.9444444444444445,
+      "n_claims_compared": 26,
+      "median_gate_latency_ms": 5656.811003995244
+    },
+    "X": {
+      "n_samples": 6,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.3611111111111111,
+      "LAR_strict": 0.25,
+      "n_claims_compared": 36,
+      "median_gate_latency_ms": 5656.811003995244
+    }
+  }
+}

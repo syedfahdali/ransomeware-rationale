@@ -1,0 +1,2881 @@
+{
+  "corrupted_evidence_control": {
+    "n": 50,
+    "FS_original_S2": 1.0,
+    "FS_corrupted_X": 0.09675156488774853,
+    "FS_drop": 0.9032484351122515,
+    "hallucination_rate_X": 0.58,
+    "contradiction_rate_X": 0.2766666666666666
+  },
+  "perturbations": {
+    "flip_direction": {
+      "recall": 1.0,
+      "n": 50,
+      "passed": true
+    },
+    "out_of_topk_feature": {
+      "recall": 1.0,
+      "n": 50,
+      "passed": true
+    },
+    "value_30pct": {
+      "recall": 0.98,
+      "n": 50,
+      "passed": true
+    },
+    "drop_top": {
+      "recall": 1.0,
+      "n": 50,
+      "passed": true
+    },
+    "all_passed": true
+  },
+  "fluency": {
+    "n": 150,
+    "spearman_FS_vs_tokens": -0.051904471292560705,
+    "spearman_FS_vs_flesch_kincaid": -0.020499426631374832,
+    "spearman_FS_vs_rouge_l": 0.8090210303852213,
+    "mean_tokens": 120.70666666666666,
+    "mean_flesch_kincaid": 8.76309364131171,
+    "mean_rouge_l_vs_template": 0.2213216076514099,
+    "rows": [
+      {
+        "sample_id": "test_003028",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 175,
+        "n_sentences": 22,
+        "flesch_kincaid": 9.271450676982592,
+        "rouge_l_vs_template": 0.22364217252396165
+      },
+      {
+        "sample_id": "test_006079",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 148,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.290632530120483,
+        "rouge_l_vs_template": 0.2629757785467128
+      },
+      {
+        "sample_id": "test_012875",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 143,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.43058275058275,
+        "rouge_l_vs_template": 0.25622775800711745
+      },
+      {
+        "sample_id": "test_013221",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 130,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.348602276043188,
+        "rouge_l_vs_template": 0.2740740740740741
+      },
+      {
+        "sample_id": "test_013878",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 129,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.08762931034483,
+        "rouge_l_vs_template": 0.27611940298507465
+      },
+      {
+        "sample_id": "test_016376",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 127,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.572429577464792,
+        "rouge_l_vs_template": 0.26415094339622636
+      },
+      {
+        "sample_id": "test_020120",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 119,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.593291182501712,
+        "rouge_l_vs_template": 0.27906976744186046
+      },
+      {
+        "sample_id": "test_025235",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 123,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.713369565217395,
+        "rouge_l_vs_template": 0.27586206896551724
+      },
+      {
+        "sample_id": "test_028179",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 122,
+        "n_sentences": 24,
+        "flesch_kincaid": 7.858297101449278,
+        "rouge_l_vs_template": 0.2681992337164751
+      },
+      {
+        "sample_id": "test_030109",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 164,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.049323770491803,
+        "rouge_l_vs_template": 0.30819672131147546
+      },
+      {
+        "sample_id": "test_030157",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 173,
+        "n_sentences": 23,
+        "flesch_kincaid": 10.739158335270869,
+        "rouge_l_vs_template": 0.2829581993569132
+      },
+      {
+        "sample_id": "test_030238",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.998409090909092,
+        "rouge_l_vs_template": 0.2905405405405405
+      },
+      {
+        "sample_id": "test_030865",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 148,
+        "n_sentences": 21,
+        "flesch_kincaid": 10.170178571428572,
+        "rouge_l_vs_template": 0.3076923076923077
+      },
+      {
+        "sample_id": "test_031534",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 169,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.629983368971253,
+        "rouge_l_vs_template": 0.27741935483870966
+      },
+      {
+        "sample_id": "test_031799",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 161,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.204782608695655,
+        "rouge_l_vs_template": 0.29508196721311475
+      },
+      {
+        "sample_id": "test_031966",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.706799132947978,
+        "rouge_l_vs_template": 0.2905405405405405
+      },
+      {
+        "sample_id": "test_032287",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 154,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.992727272727272,
+        "rouge_l_vs_template": 0.28378378378378377
+      },
+      {
+        "sample_id": "test_032402",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 146,
+        "n_sentences": 21,
+        "flesch_kincaid": 8.4797287522604,
+        "rouge_l_vs_template": 0.2887323943661972
+      },
+      {
+        "sample_id": "test_032493",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 156,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.612142857142857,
+        "rouge_l_vs_template": 0.2809364548494983
+      },
+      {
+        "sample_id": "test_032517",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 152,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.546644736842104,
+        "rouge_l_vs_template": 0.2866894197952218
+      },
+      {
+        "sample_id": "test_032521",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 156,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.798973410404624,
+        "rouge_l_vs_template": 0.29830508474576267
+      },
+      {
+        "sample_id": "test_032559",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.635060465116279,
+        "rouge_l_vs_template": 0.29830508474576267
+      },
+      {
+        "sample_id": "test_032644",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 158,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.169864864864866,
+        "rouge_l_vs_template": 0.2649006622516556
+      },
+      {
+        "sample_id": "test_032658",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 149,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.940865384615385,
+        "rouge_l_vs_template": 0.2827586206896552
+      },
+      {
+        "sample_id": "test_032950",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.852517573548557,
+        "rouge_l_vs_template": 0.302405498281787
+      },
+      {
+        "sample_id": "test_032951",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.065529411764707,
+        "rouge_l_vs_template": 0.29452054794520544
+      },
+      {
+        "sample_id": "test_033454",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.159471345029239,
+        "rouge_l_vs_template": 0.2925170068027211
+      },
+      {
+        "sample_id": "test_034133",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 163,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.318909440307472,
+        "rouge_l_vs_template": 0.29801324503311255
+      },
+      {
+        "sample_id": "test_034442",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.73166666666667,
+        "rouge_l_vs_template": 0.2576271186440678
+      },
+      {
+        "sample_id": "test_034825",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 164,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.747002197802203,
+        "rouge_l_vs_template": 0.2875816993464052
+      },
+      {
+        "sample_id": "test_034844",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.31246301775148,
+        "rouge_l_vs_template": 0.2611683848797251
+      },
+      {
+        "sample_id": "test_034904",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 130,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.250387931034485,
+        "rouge_l_vs_template": 0.2730627306273063
+      },
+      {
+        "sample_id": "test_038036",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 154,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.832808748999735,
+        "rouge_l_vs_template": 0.29655172413793096
+      },
+      {
+        "sample_id": "test_039259",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.287248112470714,
+        "rouge_l_vs_template": 0.288659793814433
+      },
+      {
+        "sample_id": "test_042772",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 158,
+        "n_sentences": 28,
+        "flesch_kincaid": 8.747142857142858,
+        "rouge_l_vs_template": 0.27152317880794696
+      },
+      {
+        "sample_id": "test_045129",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 144,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.822041827187672,
+        "rouge_l_vs_template": 0.28169014084507044
+      },
+      {
+        "sample_id": "test_046734",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 150,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.5659040105194,
+        "rouge_l_vs_template": 0.2808219178082192
+      },
+      {
+        "sample_id": "test_049905",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 150,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.939082840236686,
+        "rouge_l_vs_template": 0.2866894197952218
+      },
+      {
+        "sample_id": "test_050101",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 144,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.397500000000004,
+        "rouge_l_vs_template": 0.29370629370629375
+      },
+      {
+        "sample_id": "test_051466",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 151,
+        "n_sentences": 24,
+        "flesch_kincaid": 10.803535276073621,
+        "rouge_l_vs_template": 0.302405498281787
+      },
+      {
+        "sample_id": "test_052250",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 157,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.30026206896552,
+        "rouge_l_vs_template": 0.30405405405405406
+      },
+      {
+        "sample_id": "test_053435",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 157,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.419778838904246,
+        "rouge_l_vs_template": 0.2760942760942761
+      },
+      {
+        "sample_id": "test_053436",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 153,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.353218390804603,
+        "rouge_l_vs_template": 0.28762541806020064
+      },
+      {
+        "sample_id": "test_054058",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 132,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.485072463768116,
+        "rouge_l_vs_template": 0.2814814814814815
+      },
+      {
+        "sample_id": "test_054110",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.504500584795323,
+        "rouge_l_vs_template": 0.32081911262798635
+      },
+      {
+        "sample_id": "test_055106",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 145,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.100543478260871,
+        "rouge_l_vs_template": 0.30985915492957744
+      },
+      {
+        "sample_id": "test_055867",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 157,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.979631502890175,
+        "rouge_l_vs_template": 0.3050847457627119
+      },
+      {
+        "sample_id": "test_056459",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 159,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.536296851574214,
+        "rouge_l_vs_template": 0.303030303030303
+      },
+      {
+        "sample_id": "test_057797",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 159,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.218888888888891,
+        "rouge_l_vs_template": 0.2838283828382838
+      },
+      {
+        "sample_id": "test_057948",
+        "arm": "S2",
+        "FS": 1.0,
+        "n_tokens": 149,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.304533333333335,
+        "rouge_l_vs_template": 0.2789115646258503
+      },
+      {
+        "sample_id": "test_003028",
+        "arm": "P0",
+        "FS": 0.9634369329195573,
+        "n_tokens": 74,
+        "n_sentences": 7,
+        "flesch_kincaid": 7.145995975855133,
+        "rouge_l_vs_template": 0.21782178217821785
+      },
+      {
+        "sample_id": "test_006079",
+        "arm": "P0",
+        "FS": 0.9499406025147318,
+        "n_tokens": 79,
+        "n_sentences": 8,
+        "flesch_kincaid": 6.234503424657536,
+        "rouge_l_vs_template": 0.1747572815533981
+      },
+      {
+        "sample_id": "test_012875",
+        "arm": "P0",
+        "FS": 0.7222692546384853,
+        "n_tokens": 72,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.545274725274727,
+        "rouge_l_vs_template": 0.18181818181818182
+      },
+      {
+        "sample_id": "test_013221",
+        "arm": "P0",
+        "FS": 0.853850282525819,
+        "n_tokens": 71,
+        "n_sentences": 6,
+        "flesch_kincaid": 8.187878787878791,
+        "rouge_l_vs_template": 0.17258883248730963
+      },
+      {
+        "sample_id": "test_013878",
+        "arm": "P0",
+        "FS": 0.6336639526787928,
+        "n_tokens": 59,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.545795454545456,
+        "rouge_l_vs_template": 0.17021276595744678
+      },
+      {
+        "sample_id": "test_016376",
+        "arm": "P0",
+        "FS": 0.8685754773383254,
+        "n_tokens": 67,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.275553278688523,
+        "rouge_l_vs_template": 0.17525773195876287
+      },
+      {
+        "sample_id": "test_020120",
+        "arm": "P0",
+        "FS": 0.85858136256787,
+        "n_tokens": 50,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.210365448504984,
+        "rouge_l_vs_template": 0.20454545454545456
+      },
+      {
+        "sample_id": "test_025235",
+        "arm": "P0",
+        "FS": 0.9490320922805844,
+        "n_tokens": 51,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.419365079365079,
+        "rouge_l_vs_template": 0.14606741573033707
+      },
+      {
+        "sample_id": "test_028179",
+        "arm": "P0",
+        "FS": 0.9546330134727974,
+        "n_tokens": 60,
+        "n_sentences": 7,
+        "flesch_kincaid": 7.856103896103896,
+        "rouge_l_vs_template": 0.19148936170212766
+      },
+      {
+        "sample_id": "test_030109",
+        "arm": "P0",
+        "FS": 0.8172318580572788,
+        "n_tokens": 83,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.276439873417722,
+        "rouge_l_vs_template": 0.2358490566037736
+      },
+      {
+        "sample_id": "test_030157",
+        "arm": "P0",
+        "FS": 0.848130125339583,
+        "n_tokens": 75,
+        "n_sentences": 7,
+        "flesch_kincaid": 10.055714285714284,
+        "rouge_l_vs_template": 0.175609756097561
+      },
+      {
+        "sample_id": "test_030238",
+        "arm": "P0",
+        "FS": 0.8480948326001339,
+        "n_tokens": 77,
+        "n_sentences": 7,
+        "flesch_kincaid": 9.975772994129162,
+        "rouge_l_vs_template": 0.21568627450980393
+      },
+      {
+        "sample_id": "test_030865",
+        "arm": "P0",
+        "FS": 0.7354057850795988,
+        "n_tokens": 78,
+        "n_sentences": 6,
+        "flesch_kincaid": 7.420753424657537,
+        "rouge_l_vs_template": 0.1951219512195122
+      },
+      {
+        "sample_id": "test_031534",
+        "arm": "P0",
+        "FS": 0.9128709291752769,
+        "n_tokens": 76,
+        "n_sentences": 6,
+        "flesch_kincaid": 8.636267605633801,
+        "rouge_l_vs_template": 0.19704433497536947
+      },
+      {
+        "sample_id": "test_031799",
+        "arm": "P0",
+        "FS": 0.5863316075151782,
+        "n_tokens": 64,
+        "n_sentences": 9,
+        "flesch_kincaid": 7.364808743169402,
+        "rouge_l_vs_template": 0.17346938775510204
+      },
+      {
+        "sample_id": "test_031966",
+        "arm": "P0",
+        "FS": 0.6544498205672646,
+        "n_tokens": 65,
+        "n_sentences": 6,
+        "flesch_kincaid": 7.97666666666667,
+        "rouge_l_vs_template": 0.22797927461139894
+      },
+      {
+        "sample_id": "test_032287",
+        "arm": "P0",
+        "FS": 1.0,
+        "n_tokens": 70,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.262981366459627,
+        "rouge_l_vs_template": 0.16
+      },
+      {
+        "sample_id": "test_032402",
+        "arm": "P0",
+        "FS": 0.7780344596134071,
+        "n_tokens": 69,
+        "n_sentences": 6,
+        "flesch_kincaid": 7.929375,
+        "rouge_l_vs_template": 0.21428571428571427
+      },
+      {
+        "sample_id": "test_032493",
+        "arm": "P0",
+        "FS": 0.8201060142535201,
+        "n_tokens": 69,
+        "n_sentences": 8,
+        "flesch_kincaid": 7.729519230769231,
+        "rouge_l_vs_template": 0.22222222222222224
+      },
+      {
+        "sample_id": "test_032517",
+        "arm": "P0",
+        "FS": 0.45069379578542457,
+        "n_tokens": 56,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.537703081232497,
+        "rouge_l_vs_template": 0.15217391304347827
+      },
+      {
+        "sample_id": "test_032521",
+        "arm": "P0",
+        "FS": 0.4975970569029986,
+        "n_tokens": 61,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.599568965517243,
+        "rouge_l_vs_template": 0.19895287958115182
+      },
+      {
+        "sample_id": "test_032559",
+        "arm": "P0",
+        "FS": 0.5988504311179365,
+        "n_tokens": 64,
+        "n_sentences": 7,
+        "flesch_kincaid": 7.152833723653398,
+        "rouge_l_vs_template": 0.22564102564102567
+      },
+      {
+        "sample_id": "test_032644",
+        "arm": "P0",
+        "FS": 1.0,
+        "n_tokens": 54,
+        "n_sentences": 9,
+        "flesch_kincaid": 9.038888888888891,
+        "rouge_l_vs_template": 0.20320855614973263
+      },
+      {
+        "sample_id": "test_032658",
+        "arm": "P0",
+        "FS": 0.8219357715195936,
+        "n_tokens": 66,
+        "n_sentences": 6,
+        "flesch_kincaid": 7.797063492063494,
+        "rouge_l_vs_template": 0.18556701030927836
+      },
+      {
+        "sample_id": "test_032950",
+        "arm": "P0",
+        "FS": 0.8033287003683426,
+        "n_tokens": 70,
+        "n_sentences": 6,
+        "flesch_kincaid": 9.148846153846158,
+        "rouge_l_vs_template": 0.20408163265306126
+      },
+      {
+        "sample_id": "test_032951",
+        "arm": "P0",
+        "FS": 0.7597644342743637,
+        "n_tokens": 84,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.837108013937282,
+        "rouge_l_vs_template": 0.19718309859154928
+      },
+      {
+        "sample_id": "test_033454",
+        "arm": "P0",
+        "FS": 0.4268326177778963,
+        "n_tokens": 55,
+        "n_sentences": 6,
+        "flesch_kincaid": 10.399509803921571,
+        "rouge_l_vs_template": 0.21978021978021975
+      },
+      {
+        "sample_id": "test_034133",
+        "arm": "P0",
+        "FS": 0.5529547466146726,
+        "n_tokens": 64,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.228801843317974,
+        "rouge_l_vs_template": 0.21538461538461537
+      },
+      {
+        "sample_id": "test_034442",
+        "arm": "P0",
+        "FS": 0.5630583732189725,
+        "n_tokens": 51,
+        "n_sentences": 9,
+        "flesch_kincaid": 7.631666666666671,
+        "rouge_l_vs_template": 0.2087912087912088
+      },
+      {
+        "sample_id": "test_034825",
+        "arm": "P0",
+        "FS": 0.8528685823256714,
+        "n_tokens": 57,
+        "n_sentences": 6,
+        "flesch_kincaid": 9.801538461538463,
+        "rouge_l_vs_template": 0.25
+      },
+      {
+        "sample_id": "test_034844",
+        "arm": "P0",
+        "FS": 0.5883415314401708,
+        "n_tokens": 63,
+        "n_sentences": 7,
+        "flesch_kincaid": 6.706221198156683,
+        "rouge_l_vs_template": 0.17801047120418848
+      },
+      {
+        "sample_id": "test_034904",
+        "arm": "P0",
+        "FS": 0.6593146997741433,
+        "n_tokens": 43,
+        "n_sentences": 6,
+        "flesch_kincaid": 9.637307692307694,
+        "rouge_l_vs_template": 0.2105263157894737
+      },
+      {
+        "sample_id": "test_038036",
+        "arm": "P0",
+        "FS": 0.8357647392101137,
+        "n_tokens": 64,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.803017241379315,
+        "rouge_l_vs_template": 0.23157894736842105
+      },
+      {
+        "sample_id": "test_039259",
+        "arm": "P0",
+        "FS": 0.6281568469550336,
+        "n_tokens": 59,
+        "n_sentences": 5,
+        "flesch_kincaid": 10.79818181818182,
+        "rouge_l_vs_template": 0.20430107526881722
+      },
+      {
+        "sample_id": "test_042772",
+        "arm": "P0",
+        "FS": 0.5611622822300145,
+        "n_tokens": 46,
+        "n_sentences": 10,
+        "flesch_kincaid": 6.838476190476193,
+        "rouge_l_vs_template": 0.1807909604519774
+      },
+      {
+        "sample_id": "test_045129",
+        "arm": "P0",
+        "FS": 0.819378329767926,
+        "n_tokens": 57,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.30633053221289,
+        "rouge_l_vs_template": 0.2608695652173913
+      },
+      {
+        "sample_id": "test_046734",
+        "arm": "P0",
+        "FS": 0.6124973113129053,
+        "n_tokens": 55,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.472219387755107,
+        "rouge_l_vs_template": 0.24043715846994537
+      },
+      {
+        "sample_id": "test_049905",
+        "arm": "P0",
+        "FS": 0.7937067007294756,
+        "n_tokens": 56,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.956538461538464,
+        "rouge_l_vs_template": 0.227027027027027
+      },
+      {
+        "sample_id": "test_050101",
+        "arm": "P0",
+        "FS": 1.0,
+        "n_tokens": 63,
+        "n_sentences": 7,
+        "flesch_kincaid": 7.758571428571429,
+        "rouge_l_vs_template": 0.20105820105820105
+      },
+      {
+        "sample_id": "test_051466",
+        "arm": "P0",
+        "FS": 0.9186421389974351,
+        "n_tokens": 64,
+        "n_sentences": 6,
+        "flesch_kincaid": 9.245000000000001,
+        "rouge_l_vs_template": 0.2421052631578947
+      },
+      {
+        "sample_id": "test_052250",
+        "arm": "P0",
+        "FS": 1.0,
+        "n_tokens": 46,
+        "n_sentences": 8,
+        "flesch_kincaid": 8.459738372093025,
+        "rouge_l_vs_template": 0.20454545454545456
+      },
+      {
+        "sample_id": "test_053435",
+        "arm": "P0",
+        "FS": 0.733738815886637,
+        "n_tokens": 53,
+        "n_sentences": 6,
+        "flesch_kincaid": 8.548529411764708,
+        "rouge_l_vs_template": 0.22826086956521738
+      },
+      {
+        "sample_id": "test_053436",
+        "arm": "P0",
+        "FS": 0.5639662866713915,
+        "n_tokens": 61,
+        "n_sentences": 8,
+        "flesch_kincaid": 6.1857954545454525,
+        "rouge_l_vs_template": 0.23280423280423282
+      },
+      {
+        "sample_id": "test_054058",
+        "arm": "P0",
+        "FS": 1.0,
+        "n_tokens": 46,
+        "n_sentences": 6,
+        "flesch_kincaid": 7.930476190476192,
+        "rouge_l_vs_template": 0.17241379310344826
+      },
+      {
+        "sample_id": "test_054110",
+        "arm": "P0",
+        "FS": 0.8558518729417233,
+        "n_tokens": 45,
+        "n_sentences": 8,
+        "flesch_kincaid": 10.516378205128206,
+        "rouge_l_vs_template": 0.2543352601156069
+      },
+      {
+        "sample_id": "test_055106",
+        "arm": "P0",
+        "FS": 0.9100816682267199,
+        "n_tokens": 46,
+        "n_sentences": 7,
+        "flesch_kincaid": 9.880293040293044,
+        "rouge_l_vs_template": 0.2543352601156069
+      },
+      {
+        "sample_id": "test_055867",
+        "arm": "P0",
+        "FS": 0.9432182202248879,
+        "n_tokens": 47,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.855261324041813,
+        "rouge_l_vs_template": 0.2285714285714286
+      },
+      {
+        "sample_id": "test_056459",
+        "arm": "P0",
+        "FS": 0.6519620049363007,
+        "n_tokens": 59,
+        "n_sentences": 7,
+        "flesch_kincaid": 8.959083557951484,
+        "rouge_l_vs_template": 0.20430107526881722
+      },
+      {
+        "sample_id": "test_057797",
+        "arm": "P0",
+        "FS": 0.6379540078496105,
+        "n_tokens": 62,
+        "n_sentences": 7,
+        "flesch_kincaid": 7.459398496240603,
+        "rouge_l_vs_template": 0.26315789473684215
+      },
+      {
+        "sample_id": "test_057948",
+        "arm": "P0",
+        "FS": 0.7965356928148217,
+        "n_tokens": 52,
+        "n_sentences": 8,
+        "flesch_kincaid": 6.170833333333334,
+        "rouge_l_vs_template": 0.1978021978021978
+      },
+      {
+        "sample_id": "test_003028",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 148,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.290632530120483,
+        "rouge_l_vs_template": 0.16608996539792384
+      },
+      {
+        "sample_id": "test_006079",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 143,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.43058275058275,
+        "rouge_l_vs_template": 0.15658362989323843
+      },
+      {
+        "sample_id": "test_012875",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 130,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.348602276043188,
+        "rouge_l_vs_template": 0.1851851851851852
+      },
+      {
+        "sample_id": "test_013221",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 129,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.08762931034483,
+        "rouge_l_vs_template": 0.18656716417910446
+      },
+      {
+        "sample_id": "test_013878",
+        "arm": "X",
+        "FS": 1.0,
+        "n_tokens": 127,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.572429577464792,
+        "rouge_l_vs_template": 0.20377358490566036
+      },
+      {
+        "sample_id": "test_016376",
+        "arm": "X",
+        "FS": 0.5513897741538228,
+        "n_tokens": 119,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.593291182501712,
+        "rouge_l_vs_template": 0.20930232558139533
+      },
+      {
+        "sample_id": "test_020120",
+        "arm": "X",
+        "FS": 0.784241680391025,
+        "n_tokens": 123,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.713369565217395,
+        "rouge_l_vs_template": 0.21455938697318008
+      },
+      {
+        "sample_id": "test_025235",
+        "arm": "X",
+        "FS": 0.5773502691896257,
+        "n_tokens": 122,
+        "n_sentences": 24,
+        "flesch_kincaid": 7.858297101449278,
+        "rouge_l_vs_template": 0.1839080459770115
+      },
+      {
+        "sample_id": "test_028179",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 169,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.629983368971253,
+        "rouge_l_vs_template": 0.14838709677419357
+      },
+      {
+        "sample_id": "test_030109",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 173,
+        "n_sentences": 23,
+        "flesch_kincaid": 10.739158335270869,
+        "rouge_l_vs_template": 0.16720257234726685
+      },
+      {
+        "sample_id": "test_030157",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.998409090909092,
+        "rouge_l_vs_template": 0.1891891891891892
+      },
+      {
+        "sample_id": "test_030238",
+        "arm": "X",
+        "FS": 0.3318339105290897,
+        "n_tokens": 148,
+        "n_sentences": 21,
+        "flesch_kincaid": 10.170178571428572,
+        "rouge_l_vs_template": 0.2027972027972028
+      },
+      {
+        "sample_id": "test_030865",
+        "arm": "X",
+        "FS": 0.6136658776565749,
+        "n_tokens": 154,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.992727272727272,
+        "rouge_l_vs_template": 0.18243243243243243
+      },
+      {
+        "sample_id": "test_031534",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 161,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.204782608695655,
+        "rouge_l_vs_template": 0.15081967213114753
+      },
+      {
+        "sample_id": "test_031799",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.706799132947978,
+        "rouge_l_vs_template": 0.16891891891891891
+      },
+      {
+        "sample_id": "test_031966",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 156,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.612142857142857,
+        "rouge_l_vs_template": 0.12709030100334448
+      },
+      {
+        "sample_id": "test_032287",
+        "arm": "X",
+        "FS": 0.42318651236203914,
+        "n_tokens": 146,
+        "n_sentences": 21,
+        "flesch_kincaid": 8.4797287522604,
+        "rouge_l_vs_template": 0.1619718309859155
+      },
+      {
+        "sample_id": "test_032402",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 152,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.546644736842104,
+        "rouge_l_vs_template": 0.1774744027303754
+      },
+      {
+        "sample_id": "test_032493",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.635060465116279,
+        "rouge_l_vs_template": 0.16271186440677965
+      },
+      {
+        "sample_id": "test_032517",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 156,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.798973410404624,
+        "rouge_l_vs_template": 0.1898305084745763
+      },
+      {
+        "sample_id": "test_032521",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 158,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.169864864864866,
+        "rouge_l_vs_template": 0.15231788079470196
+      },
+      {
+        "sample_id": "test_032559",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 164,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.747002197802203,
+        "rouge_l_vs_template": 0.16993464052287582
+      },
+      {
+        "sample_id": "test_032644",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 149,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.940865384615385,
+        "rouge_l_vs_template": 0.1793103448275862
+      },
+      {
+        "sample_id": "test_032658",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.852517573548557,
+        "rouge_l_vs_template": 0.1718213058419244
+      },
+      {
+        "sample_id": "test_032950",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.065529411764707,
+        "rouge_l_vs_template": 0.1917808219178082
+      },
+      {
+        "sample_id": "test_032951",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.159471345029239,
+        "rouge_l_vs_template": 0.2040816326530612
+      },
+      {
+        "sample_id": "test_033454",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 163,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.318909440307472,
+        "rouge_l_vs_template": 0.19205298013245034
+      },
+      {
+        "sample_id": "test_034133",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.73166666666667,
+        "rouge_l_vs_template": 0.1423728813559322
+      },
+      {
+        "sample_id": "test_034442",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.31246301775148,
+        "rouge_l_vs_template": 0.1512027491408935
+      },
+      {
+        "sample_id": "test_034825",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 130,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.250387931034485,
+        "rouge_l_vs_template": 0.14760147601476015
+      },
+      {
+        "sample_id": "test_034844",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.832808748999735,
+        "rouge_l_vs_template": 0.16551724137931034
+      },
+      {
+        "sample_id": "test_034904",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 158,
+        "n_sentences": 28,
+        "flesch_kincaid": 8.747142857142858,
+        "rouge_l_vs_template": 0.1456953642384106
+      },
+      {
+        "sample_id": "test_038036",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.287248112470714,
+        "rouge_l_vs_template": 0.17869415807560138
+      },
+      {
+        "sample_id": "test_039259",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 144,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.822041827187672,
+        "rouge_l_vs_template": 0.15492957746478872
+      },
+      {
+        "sample_id": "test_042772",
+        "arm": "X",
+        "FS": 0.3201694783886099,
+        "n_tokens": 150,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.5659040105194,
+        "rouge_l_vs_template": 0.1643835616438356
+      },
+      {
+        "sample_id": "test_045129",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.30026206896552,
+        "rouge_l_vs_template": 0.1891891891891892
+      },
+      {
+        "sample_id": "test_046734",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 150,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.939082840236686,
+        "rouge_l_vs_template": 0.16382252559726962
+      },
+      {
+        "sample_id": "test_049905",
+        "arm": "X",
+        "FS": 0.2357407417166391,
+        "n_tokens": 144,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.397500000000004,
+        "rouge_l_vs_template": 0.16083916083916083
+      },
+      {
+        "sample_id": "test_050101",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 151,
+        "n_sentences": 24,
+        "flesch_kincaid": 10.803535276073621,
+        "rouge_l_vs_template": 0.16494845360824742
+      },
+      {
+        "sample_id": "test_051466",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.353218390804603,
+        "rouge_l_vs_template": 0.18729096989966554
+      },
+      {
+        "sample_id": "test_052250",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.419778838904246,
+        "rouge_l_vs_template": 0.14814814814814814
+      },
+      {
+        "sample_id": "test_053435",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 132,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.485072463768116,
+        "rouge_l_vs_template": 0.17777777777777776
+      },
+      {
+        "sample_id": "test_053436",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 159,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.218888888888891,
+        "rouge_l_vs_template": 0.1716171617161716
+      },
+      {
+        "sample_id": "test_054058",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.504500584795323,
+        "rouge_l_vs_template": 0.1911262798634812
+      },
+      {
+        "sample_id": "test_054110",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 145,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.100543478260871,
+        "rouge_l_vs_template": 0.20422535211267606
+      },
+      {
+        "sample_id": "test_055106",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.979631502890175,
+        "rouge_l_vs_template": 0.16949152542372883
+      },
+      {
+        "sample_id": "test_055867",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 159,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.536296851574214,
+        "rouge_l_vs_template": 0.17508417508417506
+      },
+      {
+        "sample_id": "test_056459",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 149,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.304533333333335,
+        "rouge_l_vs_template": 0.17006802721088435
+      },
+      {
+        "sample_id": "test_057797",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 175,
+        "n_sentences": 22,
+        "flesch_kincaid": 9.271450676982592,
+        "rouge_l_vs_template": 0.12779552715654954
+      },
+      {
+        "sample_id": "test_057948",
+        "arm": "X",
+        "FS": 0.0,
+        "n_tokens": 164,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.049323770491803,
+        "rouge_l_vs_template": 0.1836065573770492
+      }
+    ],
+    "P0_only_n": 50,
+    "P0_only_FS_vs_tokens": 0.055352513275356736,
+    "P0_only_FS_vs_flesch_kincaid": 0.0928657325522016,
+    "P0_only_FS_vs_rouge_l": -0.08076489490858263,
+    "corrupted_mean_tokens": 150.28,
+    "corrupted_mean_rouge_l_vs_template": 0.1726304545458431,
+    "corrupted_mean_FS": 0.09675156488774853,
+    "rows_corrupted": [
+      {
+        "sample_id": "test_003028",
+        "FS": 0.0,
+        "n_tokens": 148,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.290632530120483,
+        "rouge_l_vs_template": 0.16608996539792384
+      },
+      {
+        "sample_id": "test_006079",
+        "FS": 0.0,
+        "n_tokens": 143,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.43058275058275,
+        "rouge_l_vs_template": 0.15658362989323843
+      },
+      {
+        "sample_id": "test_012875",
+        "FS": 0.0,
+        "n_tokens": 130,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.348602276043188,
+        "rouge_l_vs_template": 0.1851851851851852
+      },
+      {
+        "sample_id": "test_013221",
+        "FS": 0.0,
+        "n_tokens": 129,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.08762931034483,
+        "rouge_l_vs_template": 0.18656716417910446
+      },
+      {
+        "sample_id": "test_013878",
+        "FS": 1.0,
+        "n_tokens": 127,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.572429577464792,
+        "rouge_l_vs_template": 0.20377358490566036
+      },
+      {
+        "sample_id": "test_016376",
+        "FS": 0.5513897741538228,
+        "n_tokens": 119,
+        "n_sentences": 22,
+        "flesch_kincaid": 8.593291182501712,
+        "rouge_l_vs_template": 0.20930232558139533
+      },
+      {
+        "sample_id": "test_020120",
+        "FS": 0.784241680391025,
+        "n_tokens": 123,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.713369565217395,
+        "rouge_l_vs_template": 0.21455938697318008
+      },
+      {
+        "sample_id": "test_025235",
+        "FS": 0.5773502691896257,
+        "n_tokens": 122,
+        "n_sentences": 24,
+        "flesch_kincaid": 7.858297101449278,
+        "rouge_l_vs_template": 0.1839080459770115
+      },
+      {
+        "sample_id": "test_028179",
+        "FS": 0.0,
+        "n_tokens": 169,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.629983368971253,
+        "rouge_l_vs_template": 0.14838709677419357
+      },
+      {
+        "sample_id": "test_030109",
+        "FS": 0.0,
+        "n_tokens": 173,
+        "n_sentences": 23,
+        "flesch_kincaid": 10.739158335270869,
+        "rouge_l_vs_template": 0.16720257234726685
+      },
+      {
+        "sample_id": "test_030157",
+        "FS": 0.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.998409090909092,
+        "rouge_l_vs_template": 0.1891891891891892
+      },
+      {
+        "sample_id": "test_030238",
+        "FS": 0.3318339105290897,
+        "n_tokens": 148,
+        "n_sentences": 21,
+        "flesch_kincaid": 10.170178571428572,
+        "rouge_l_vs_template": 0.2027972027972028
+      },
+      {
+        "sample_id": "test_030865",
+        "FS": 0.6136658776565749,
+        "n_tokens": 154,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.992727272727272,
+        "rouge_l_vs_template": 0.18243243243243243
+      },
+      {
+        "sample_id": "test_031534",
+        "FS": 0.0,
+        "n_tokens": 161,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.204782608695655,
+        "rouge_l_vs_template": 0.15081967213114753
+      },
+      {
+        "sample_id": "test_031799",
+        "FS": 0.0,
+        "n_tokens": 155,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.706799132947978,
+        "rouge_l_vs_template": 0.16891891891891891
+      },
+      {
+        "sample_id": "test_031966",
+        "FS": 0.0,
+        "n_tokens": 156,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.612142857142857,
+        "rouge_l_vs_template": 0.12709030100334448
+      },
+      {
+        "sample_id": "test_032287",
+        "FS": 0.42318651236203914,
+        "n_tokens": 146,
+        "n_sentences": 21,
+        "flesch_kincaid": 8.4797287522604,
+        "rouge_l_vs_template": 0.1619718309859155
+      },
+      {
+        "sample_id": "test_032402",
+        "FS": 0.0,
+        "n_tokens": 152,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.546644736842104,
+        "rouge_l_vs_template": 0.1774744027303754
+      },
+      {
+        "sample_id": "test_032493",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.635060465116279,
+        "rouge_l_vs_template": 0.16271186440677965
+      },
+      {
+        "sample_id": "test_032517",
+        "FS": 0.0,
+        "n_tokens": 156,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.798973410404624,
+        "rouge_l_vs_template": 0.1898305084745763
+      },
+      {
+        "sample_id": "test_032521",
+        "FS": 0.0,
+        "n_tokens": 158,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.169864864864866,
+        "rouge_l_vs_template": 0.15231788079470196
+      },
+      {
+        "sample_id": "test_032559",
+        "FS": 0.0,
+        "n_tokens": 164,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.747002197802203,
+        "rouge_l_vs_template": 0.16993464052287582
+      },
+      {
+        "sample_id": "test_032644",
+        "FS": 0.0,
+        "n_tokens": 149,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.940865384615385,
+        "rouge_l_vs_template": 0.1793103448275862
+      },
+      {
+        "sample_id": "test_032658",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.852517573548557,
+        "rouge_l_vs_template": 0.1718213058419244
+      },
+      {
+        "sample_id": "test_032950",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.065529411764707,
+        "rouge_l_vs_template": 0.1917808219178082
+      },
+      {
+        "sample_id": "test_032951",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.159471345029239,
+        "rouge_l_vs_template": 0.2040816326530612
+      },
+      {
+        "sample_id": "test_033454",
+        "FS": 0.0,
+        "n_tokens": 163,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.318909440307472,
+        "rouge_l_vs_template": 0.19205298013245034
+      },
+      {
+        "sample_id": "test_034133",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.73166666666667,
+        "rouge_l_vs_template": 0.1423728813559322
+      },
+      {
+        "sample_id": "test_034442",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.31246301775148,
+        "rouge_l_vs_template": 0.1512027491408935
+      },
+      {
+        "sample_id": "test_034825",
+        "FS": 0.0,
+        "n_tokens": 130,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.250387931034485,
+        "rouge_l_vs_template": 0.14760147601476015
+      },
+      {
+        "sample_id": "test_034844",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.832808748999735,
+        "rouge_l_vs_template": 0.16551724137931034
+      },
+      {
+        "sample_id": "test_034904",
+        "FS": 0.0,
+        "n_tokens": 158,
+        "n_sentences": 28,
+        "flesch_kincaid": 8.747142857142858,
+        "rouge_l_vs_template": 0.1456953642384106
+      },
+      {
+        "sample_id": "test_038036",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.287248112470714,
+        "rouge_l_vs_template": 0.17869415807560138
+      },
+      {
+        "sample_id": "test_039259",
+        "FS": 0.0,
+        "n_tokens": 144,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.822041827187672,
+        "rouge_l_vs_template": 0.15492957746478872
+      },
+      {
+        "sample_id": "test_042772",
+        "FS": 0.3201694783886099,
+        "n_tokens": 150,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.5659040105194,
+        "rouge_l_vs_template": 0.1643835616438356
+      },
+      {
+        "sample_id": "test_045129",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.30026206896552,
+        "rouge_l_vs_template": 0.1891891891891892
+      },
+      {
+        "sample_id": "test_046734",
+        "FS": 0.0,
+        "n_tokens": 150,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.939082840236686,
+        "rouge_l_vs_template": 0.16382252559726962
+      },
+      {
+        "sample_id": "test_049905",
+        "FS": 0.2357407417166391,
+        "n_tokens": 144,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.397500000000004,
+        "rouge_l_vs_template": 0.16083916083916083
+      },
+      {
+        "sample_id": "test_050101",
+        "FS": 0.0,
+        "n_tokens": 151,
+        "n_sentences": 24,
+        "flesch_kincaid": 10.803535276073621,
+        "rouge_l_vs_template": 0.16494845360824742
+      },
+      {
+        "sample_id": "test_051466",
+        "FS": 0.0,
+        "n_tokens": 153,
+        "n_sentences": 27,
+        "flesch_kincaid": 8.353218390804603,
+        "rouge_l_vs_template": 0.18729096989966554
+      },
+      {
+        "sample_id": "test_052250",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.419778838904246,
+        "rouge_l_vs_template": 0.14814814814814814
+      },
+      {
+        "sample_id": "test_053435",
+        "FS": 0.0,
+        "n_tokens": 132,
+        "n_sentences": 23,
+        "flesch_kincaid": 8.485072463768116,
+        "rouge_l_vs_template": 0.17777777777777776
+      },
+      {
+        "sample_id": "test_053436",
+        "FS": 0.0,
+        "n_tokens": 159,
+        "n_sentences": 26,
+        "flesch_kincaid": 8.218888888888891,
+        "rouge_l_vs_template": 0.1716171617161716
+      },
+      {
+        "sample_id": "test_054058",
+        "FS": 0.0,
+        "n_tokens": 154,
+        "n_sentences": 25,
+        "flesch_kincaid": 9.504500584795323,
+        "rouge_l_vs_template": 0.1911262798634812
+      },
+      {
+        "sample_id": "test_054110",
+        "FS": 0.0,
+        "n_tokens": 145,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.100543478260871,
+        "rouge_l_vs_template": 0.20422535211267606
+      },
+      {
+        "sample_id": "test_055106",
+        "FS": 0.0,
+        "n_tokens": 157,
+        "n_sentences": 24,
+        "flesch_kincaid": 8.979631502890175,
+        "rouge_l_vs_template": 0.16949152542372883
+      },
+      {
+        "sample_id": "test_055867",
+        "FS": 0.0,
+        "n_tokens": 159,
+        "n_sentences": 23,
+        "flesch_kincaid": 9.536296851574214,
+        "rouge_l_vs_template": 0.17508417508417506
+      },
+      {
+        "sample_id": "test_056459",
+        "FS": 0.0,
+        "n_tokens": 149,
+        "n_sentences": 25,
+        "flesch_kincaid": 8.304533333333335,
+        "rouge_l_vs_template": 0.17006802721088435
+      },
+      {
+        "sample_id": "test_057797",
+        "FS": 0.0,
+        "n_tokens": 175,
+        "n_sentences": 22,
+        "flesch_kincaid": 9.271450676982592,
+        "rouge_l_vs_template": 0.12779552715654954
+      },
+      {
+        "sample_id": "test_057948",
+        "FS": 0.0,
+        "n_tokens": 164,
+        "n_sentences": 24,
+        "flesch_kincaid": 9.049323770491803,
+        "rouge_l_vs_template": 0.1836065573770492
+      }
+    ]
+  },
+  "extractor_accuracy": {
+    "P0": {
+      "status": "ran",
+      "n_rationales": 10,
+      "precision": 0.43333333333333335,
+      "recall": 0.22033898305084745,
+      "f1": 0.29213483146067415,
+      "items": [
+        {
+          "sample_id": "test_031534",
+          "arm": "P0",
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "got": [
+            [
+              "malfind.ninjections",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "handles.nfile",
+              null
+            ],
+            [
+              "handles.nmutant",
+              null
+            ],
+            [
+              "handles.ntimer",
+              null
+            ],
+            [
+              "malfind.commitCharge",
+              "toward_benign"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_benign"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_032402",
+          "arm": "P0",
+          "tp": 0,
+          "fp": 5,
+          "fn": 6,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              null
+            ],
+            [
+              "handles.nhandles",
+              null
+            ],
+            [
+              "handles.nmutant",
+              null
+            ],
+            [
+              "handles.nsection",
+              null
+            ],
+            [
+              "handles.nsemaphore",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "dlllist.ndlls",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_032517",
+          "arm": "P0",
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nevent",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_032951",
+          "arm": "P0",
+          "tp": 1,
+          "fp": 2,
+          "fn": 5,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              null
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_033454",
+          "arm": "P0",
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "got": [
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nmutant",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_034844",
+          "arm": "P0",
+          "tp": 0,
+          "fp": 1,
+          "fn": 5,
+          "got": [
+            [
+              "handles.nthread",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_benign"
+            ],
+            [
+              "malfind.commitCharge",
+              "toward_ransomware"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_038036",
+          "arm": "P0",
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "got": [
+            [
+              "handles.nmutant",
+              null
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "callbacks.ncallbacks",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_051466",
+          "arm": "P0",
+          "tp": 2,
+          "fp": 3,
+          "fn": 4,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              null
+            ],
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              null
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "svcscan.nactive",
+              null
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_055106",
+          "arm": "P0",
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_057797",
+          "arm": "P0",
+          "tp": 1,
+          "fp": 2,
+          "fn": 5,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              null
+            ],
+            [
+              "handles.nthread",
+              null
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_benign"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_benign"
+            ],
+            [
+              "psxview.not_in_deskthrd_false_avg",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ]
+        }
+      ],
+      "gold_source": "agent-drafted (not independently annotated)"
+    },
+    "P2": {
+      "status": "ran",
+      "n_rationales": 10,
+      "precision": 0.95,
+      "recall": 0.95,
+      "f1": 0.9500000000000001,
+      "items": [
+        {
+          "sample_id": "test_003028",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_benign"
+            ],
+            [
+              "dlllist.ndlls",
+              "toward_benign"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_benign"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nservices",
+              "toward_benign"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_benign"
+            ],
+            [
+              "dlllist.ndlls",
+              "toward_benign"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_benign"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nservices",
+              "toward_benign"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_012875",
+          "arm": "P2",
+          "tp": 4,
+          "fp": 2,
+          "fn": 2,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_benign"
+            ],
+            [
+              "dlllist.ndlls",
+              null
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_benign"
+            ],
+            [
+              "pslist.avg_threads",
+              null
+            ],
+            [
+              "svcscan.nservices",
+              "toward_benign"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_benign"
+            ],
+            [
+              "dlllist.ndlls",
+              "toward_benign"
+            ],
+            [
+              "handles.nmutant",
+              "toward_benign"
+            ],
+            [
+              "handles.nsection",
+              "toward_benign"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nservices",
+              "toward_benign"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_030157",
+          "arm": "P2",
+          "tp": 5,
+          "fp": 1,
+          "fn": 1,
+          "got": [
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              null
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_benign"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_benign"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_032644",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_034825",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_benign"
+            ],
+            [
+              "ldrmodules.not_in_mem",
+              "toward_benign"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nthread",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_benign"
+            ],
+            [
+              "ldrmodules.not_in_mem",
+              "toward_benign"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_050101",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_benign"
+            ],
+            [
+              "handles.nevent",
+              "toward_benign"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_benign"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_benign"
+            ],
+            [
+              "handles.nevent",
+              "toward_benign"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "malfind.ninjections",
+              "toward_benign"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_benign"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_051466",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nfile",
+              "toward_benign"
+            ],
+            [
+              "handles.nkey",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsection",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "svcscan.nactive",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_054110",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_init_avg",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_055106",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nhandles",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nmutant",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_mem",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_handlers",
+              "toward_ransomware"
+            ],
+            [
+              "pslist.avg_threads",
+              "toward_ransomware"
+            ]
+          ]
+        },
+        {
+          "sample_id": "test_055867",
+          "arm": "P2",
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "got": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nevent",
+              "toward_benign"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_benign"
+            ]
+          ],
+          "want": [
+            [
+              "dlllist.avg_dlls_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.avg_handles_per_proc",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nevent",
+              "toward_benign"
+            ],
+            [
+              "handles.nfile",
+              "toward_ransomware"
+            ],
+            [
+              "handles.nsemaphore",
+              "toward_ransomware"
+            ],
+            [
+              "ldrmodules.not_in_load_avg",
+              "toward_benign"
+            ]
+          ]
+        }
+      ],
+      "gold_source": "agent-drafted (not independently annotated)"
+    }
+  }
+}

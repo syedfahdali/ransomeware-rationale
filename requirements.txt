@@ -1,0 +1,23 @@
+# Ransomware rationale faithfulness — Python dependencies.
+# NOTE: exact versions are pinned in requirements.lock.txt after the first
+# successful install (see `make setup`). Python 3.14 on this host.
+numpy
+pandas
+scikit-learn
+xgboost
+lightgbm
+shap
+pyyaml
+jsonschema
+requests
+httpx
+tenacity
+tqdm
+joblib
+matplotlib
+scipy
+pytest
+python-dotenv
+kaggle
+beautifulsoup4
+huggingface_hub

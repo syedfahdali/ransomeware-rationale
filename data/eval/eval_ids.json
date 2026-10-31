@@ -1,0 +1,422 @@
+{
+  "n_samples": 50,
+  "n_target": 50,
+  "quotas": {
+    "tp": 20,
+    "tn": 15,
+    "fn": 8,
+    "fp": 7
+  },
+  "actual_counts": {
+    "tp": 20,
+    "tn": 15,
+    "fn": 8,
+    "fp": 7
+  },
+  "notes": [],
+  "seed": 42,
+  "threshold": 0.5,
+  "generated": "2026-10-10T16:59:06+00:00",
+  "samples": [
+    {
+      "sample_id": "test_003028",
+      "row_uid": "row_003028",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109460369193575,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_006079",
+      "row_uid": "row_006079",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029110395166993572,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_012875",
+      "row_uid": "row_012875",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109298575943805,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_013221",
+      "row_uid": "row_013221",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109461012168804,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_013878",
+      "row_uid": "row_013878",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109240877891976,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_016376",
+      "row_uid": "row_016376",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109461450879854,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_020120",
+      "row_uid": "row_020120",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.02910958088883,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_025235",
+      "row_uid": "row_025235",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109344920330397,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_028179",
+      "row_uid": "row_028179",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.029109148576701743,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_030109",
+      "row_uid": "row_030109",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9206946617645918,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_030157",
+      "row_uid": "row_030157",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.5422132939737807,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_030238",
+      "row_uid": "row_030238",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9354086747113192,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_030865",
+      "row_uid": "row_030865",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.93312158796228,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_031534",
+      "row_uid": "row_031534",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.05409861065979932,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_031799",
+      "row_uid": "row_031799",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.04413059860372844,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_031966",
+      "row_uid": "row_031966",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.09616215091721485,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_032287",
+      "row_uid": "row_032287",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9338600253414528,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032402",
+      "row_uid": "row_032402",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.931238262307654,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032493",
+      "row_uid": "row_032493",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.0700541482773762,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_032517",
+      "row_uid": "row_032517",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.916652116339418,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032521",
+      "row_uid": "row_032521",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.8847468708106109,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032559",
+      "row_uid": "row_032559",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.0916368038073501,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_032644",
+      "row_uid": "row_032644",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9337989613356129,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032658",
+      "row_uid": "row_032658",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9361103365618829,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032950",
+      "row_uid": "row_032950",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.804739579526706,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_032951",
+      "row_uid": "row_032951",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.7153264833798623,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_033454",
+      "row_uid": "row_033454",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.6357700244323166,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_034133",
+      "row_uid": "row_034133",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.6061148185719321,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_034442",
+      "row_uid": "row_034442",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.6210089532243713,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_034825",
+      "row_uid": "row_034825",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.375066512037919,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_034844",
+      "row_uid": "row_034844",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.7393357789604206,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_034904",
+      "row_uid": "row_034904",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.03011149229059775,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_038036",
+      "row_uid": "row_038036",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.8694382517533631,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_039259",
+      "row_uid": "row_039259",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.6140992507003039,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_042772",
+      "row_uid": "row_042772",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.03048760710136422,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_045129",
+      "row_uid": "row_045129",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.734891942355455,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_046734",
+      "row_uid": "row_046734",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.034449594912996796,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_049905",
+      "row_uid": "row_049905",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.03115398530725892,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_050101",
+      "row_uid": "row_050101",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.032076231286843435,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_051466",
+      "row_uid": "row_051466",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.07345369581129146,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_052250",
+      "row_uid": "row_052250",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.7957292945182917,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_053435",
+      "row_uid": "row_053435",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.7069961963043407,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_053436",
+      "row_uid": "row_053436",
+      "y": 0,
+      "pred": 0,
+      "p_ransomware": 0.23420895942762782,
+      "stratum": "tn"
+    },
+    {
+      "sample_id": "test_054058",
+      "row_uid": "row_054058",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.9036279809952101,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_054110",
+      "row_uid": "row_054110",
+      "y": 0,
+      "pred": 1,
+      "p_ransomware": 0.8636027885500007,
+      "stratum": "fp"
+    },
+    {
+      "sample_id": "test_055106",
+      "row_uid": "row_055106",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.9093896882883482,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_055867",
+      "row_uid": "row_055867",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.8047928538375146,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_056459",
+      "row_uid": "row_056459",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.6074945587329299,
+      "stratum": "tp"
+    },
+    {
+      "sample_id": "test_057797",
+      "row_uid": "row_057797",
+      "y": 1,
+      "pred": 0,
+      "p_ransomware": 0.3256747785776392,
+      "stratum": "fn"
+    },
+    {
+      "sample_id": "test_057948",
+      "row_uid": "row_057948",
+      "y": 1,
+      "pred": 1,
+      "p_ransomware": 0.8970271864539758,
+      "stratum": "tp"
+    }
+  ]
+}

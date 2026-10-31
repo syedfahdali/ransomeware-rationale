@@ -1,0 +1,92 @@
+{
+  "status": "ran",
+  "checkpoint": "typed-decisions",
+  "device": "cpu",
+  "arms_requested": [
+    "P0",
+    "P0R",
+    "P2",
+    "S2",
+    "S2R",
+    "T",
+    "X"
+  ],
+  "arms_scored": [
+    "P0",
+    "P0R",
+    "P2",
+    "S2",
+    "S2R",
+    "T",
+    "X"
+  ],
+  "limit_per_arm": 0,
+  "temperatures_file_found": false,
+  "zero_shot": true,
+  "note": "Zero-shot: no per-question temperature file was found, so these numbers are the raw checkpoint's, not a calibrated one. Diagnostic only -- see docs/LAYA_REVIEW.md. Latency is CPU.",
+  "arms": {
+    "T": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.9966666666666667,
+      "LAR_strict": 0.9966666666666667,
+      "n_claims_compared": 300,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "P0": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.9309999999999999,
+      "LAR_strict": 0.903,
+      "n_claims_compared": 180,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "P0R": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.99,
+      "LAR_strict": 0.985,
+      "n_claims_compared": 234,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "P2": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.9533333333333333,
+      "LAR_strict": 0.9533333333333333,
+      "n_claims_compared": 300,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "S2": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 1.0,
+      "LAR_strict": 1.0,
+      "n_claims_compared": 300,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "S2R": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 1.0,
+      "LAR_strict": 1.0,
+      "n_claims_compared": 300,
+      "median_gate_latency_ms": 4648.993274997338
+    },
+    "X": {
+      "n_samples": 50,
+      "gate_agreement_rate": 1.0,
+      "gate_hard_disagreements": 0,
+      "LAR": 0.38666666666666666,
+      "LAR_strict": 0.13333333333333333,
+      "n_claims_compared": 300,
+      "median_gate_latency_ms": 4222.049681498902
+    }
+  }
+}

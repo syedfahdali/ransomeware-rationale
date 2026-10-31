@@ -1,0 +1,37 @@
+seed: 42
+dataset: cic_malmem_2022          # or ember (stub)
+task: ransomware_vs_rest
+split: {train: 0.70, val: 0.10, test: 0.20}
+model: xgboost                    # or lightgbm
+tuning: {n_trials: 30, cv: 3, metric: average_precision, time_budget_s: 1200}
+evidence: {top_k: 6}
+eval:
+  n_samples: 50                   # spec allows 50-100; 50 chosen for agent-token budget
+  strata: {tp: 20, tn: 15, fn: 8, fp: 7}   # scaled from spec 40/30/15/15 at N=100
+llm:
+  backend: agent_queue            # openai_compat | ollama | agent_queue
+  temperature: 0.2
+  max_tokens: 500
+  prompt_version: v2              # v0_zero_shot | v1_rules | v2_rules_fewshot
+  repair_rounds: 2
+  agent_queue:
+    batch_size: 25
+    model_name: freebuff-desktop-agent
+faithfulness:
+  value_tolerance: 0.05
+  prob_tolerance: 0.02
+  causal_random_draws: 100
+  causal_marginal_draws: 20
+  judge_enabled: false
+# Optional Laya decision-layer cross-check (see docs/LAYA_REVIEW.md).
+# OFF by default and diagnostic only: it never feeds the Faithfulness Score.
+# Requires the optional `laya` extra (`make setup-laya`); if it is not
+# installed every entry point below soft-fails to a no-op.
+laya:
+  enabled: false            # opt-in; `make all` never needs it
+  checkpoint: typed-decisions   # english | multilingual | typed-decisions | finetuned
+  model_dir: null           # explicit checkpoint dir (used when checkpoint=finetuned)
+  device: cpu               # cpu | cuda | xpu
+  preload: false            # Router(preload=True) keeps checkpoints resident
+  gate_confidence_threshold: 0.70   # below this the gate answer counts as 'unclear'
+  temperature_file: models/laya_temperatures.json

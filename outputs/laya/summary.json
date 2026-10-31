@@ -1,0 +1,5 @@
+{
+  "status": "skipped",
+  "reason": "cfg.laya.enabled=false (opt in with `make setup-laya` then set laya.enabled: true, or pass --force)",
+  "enabled": false
+}

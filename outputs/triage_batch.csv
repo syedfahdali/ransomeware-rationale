@@ -1,0 +1,31 @@
+sample_id,verdict,predicted_label,probability_ransomware,dataset_label,dataset_malware_class,family,correct,top_features,missing_features
+CIC-MalMem-2022#row0,benign,0,0.04110421000005908,benign,Benign,none,True,handles.nfile;dlllist.avg_dlls_per_proc;malfind.commitCharge;ldrmodules.not_in_mem;ldrmodules.not_in_init_avg;pslist.avg_handlers,0
+CIC-MalMem-2022#row1,benign,0,0.029193403545028668,benign,Benign,none,True,svcscan.nservices;pslist.avg_threads;dlllist.avg_dlls_per_proc;handles.nsemaphore;handles.nthread;svcscan.shared_process_services,0
+CIC-MalMem-2022#row2,benign,0,0.02910927132411075,benign,Benign,none,True,svcscan.nservices;handles.nsection;pslist.avg_threads;dlllist.avg_dlls_per_proc;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row3,benign,0,0.02910933649242228,benign,Benign,none,True,svcscan.nservices;dlllist.avg_dlls_per_proc;handles.nsection;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row4,benign,0,0.02910922055127631,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row5,benign,0,0.029110240548459,benign,Benign,none,True,svcscan.nservices;handles.nsection;handles.nmutant;dlllist.avg_dlls_per_proc;ldrmodules.not_in_load_avg;dlllist.ndlls,0
+CIC-MalMem-2022#row6,benign,0,0.029109430123519655,benign,Benign,none,True,svcscan.nservices;handles.nsection;pslist.avg_threads;dlllist.avg_dlls_per_proc;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row7,benign,0,0.02910927370289575,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row8,benign,0,0.029109842786605306,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;handles.nmutant;ldrmodules.not_in_load_avg;psxview.not_in_pslist_false_avg,0
+CIC-MalMem-2022#row9,benign,0,0.029109353401671655,benign,Benign,none,True,svcscan.nservices;dlllist.avg_dlls_per_proc;handles.nsection;pslist.avg_threads;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row10,benign,0,0.02910928385754189,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row11,benign,0,0.029109366367393367,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;ldrmodules.not_in_load_avg;handles.nmutant;pslist.avg_threads,0
+CIC-MalMem-2022#row12,benign,0,0.029109298575943805,benign,Benign,none,True,svcscan.nservices;dlllist.avg_dlls_per_proc;handles.nsection;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row13,benign,0,0.029110338649363538,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row14,benign,0,0.02910916186491162,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;ldrmodules.not_in_load_avg;handles.nmutant,0
+CIC-MalMem-2022#row15,benign,0,0.02910940670075187,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row16,benign,0,0.029109310346525946,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;handles.nmutant;ldrmodules.not_in_load_avg;pslist.avg_threads,0
+CIC-MalMem-2022#row17,benign,0,0.02910938413008967,benign,Benign,none,True,svcscan.nservices;handles.nsection;dlllist.avg_dlls_per_proc;handles.nmutant;ldrmodules.not_in_load_avg;pslist.avg_threads,0
+CIC-MalMem-2022#row18,benign,0,0.029109349041412828,benign,Benign,none,True,svcscan.nservices;dlllist.avg_dlls_per_proc;handles.nsection;pslist.avg_threads;handles.nmutant;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row19,benign,0,0.02910932131743576,benign,Benign,none,True,svcscan.nservices;dlllist.avg_dlls_per_proc;handles.nsection;pslist.avg_threads;handles.nmutant;dlllist.ndlls,0
+CIC-MalMem-2022#row20,ransomware,1,0.6364106687192002,ransomware,Ransomware,Conti,True,dlllist.avg_dlls_per_proc;handles.nfile;handles.nsemaphore;pslist.avg_handlers;ldrmodules.not_in_mem_avg;ldrmodules.not_in_load_avg,0
+CIC-MalMem-2022#row21,ransomware,1,0.9178942959401507,ransomware,Ransomware,Conti,True,handles.nkey;handles.nfile;pslist.avg_threads;handles.nsection;handles.nsemaphore;dlllist.avg_dlls_per_proc,0
+CIC-MalMem-2022#row22,ransomware,1,0.528122530816274,ransomware,Ransomware,Maze,True,dlllist.avg_dlls_per_proc;handles.nfile;handles.nevent;handles.nkey;ldrmodules.not_in_mem;handles.nthread,0
+CIC-MalMem-2022#row23,ransomware,1,0.856773666360635,ransomware,Ransomware,Pysa,True,dlllist.avg_dlls_per_proc;handles.nevent;handles.nsemaphore;ldrmodules.not_in_load_avg;handles.nfile;psxview.not_in_csrss_handles_false_avg,0
+CIC-MalMem-2022#row24,benign,0,0.03001485062353134,not ransomware (spyware),Spyware,180solutions,True,handles.nsection;handles.nkey;dlllist.avg_dlls_per_proc;handles.avg_handles_per_proc;handles.nevent;ldrmodules.not_in_mem,0
+CIC-MalMem-2022#row25,ransomware,1,0.621870829026124,not ransomware (spyware),Spyware,CWS,False,dlllist.avg_dlls_per_proc;callbacks.ncallbacks;handles.nmutant;handles.nfile;handles.nevent;handles.nsemaphore,0
+CIC-MalMem-2022#row26,benign,0,0.04055675343728699,not ransomware (spyware),Spyware,CWS,True,handles.nkey;dlllist.avg_dlls_per_proc;ldrmodules.not_in_load_avg;malfind.ninjections;ldrmodules.not_in_mem_avg;handles.avg_handles_per_proc,0
+CIC-MalMem-2022#row27,benign,0,0.031823063350946035,not ransomware (spyware),Spyware,Gator,True,handles.nmutant;handles.ntimer;handles.nsection;pslist.nppid;ldrmodules.not_in_mem;handles.nthread,0
+CIC-MalMem-2022#row28,benign,0,0.08900241361266892,not ransomware (spyware),Spyware,TIBS,True,handles.nkey;dlllist.avg_dlls_per_proc;malfind.ninjections;ldrmodules.not_in_load_avg;handles.nmutant;ldrmodules.not_in_mem_avg,0
+CIC-MalMem-2022#row29,benign,0,0.0326614786783044,not ransomware (spyware),Spyware,Transponder,True,pslist.avg_threads;handles.nkey;ldrmodules.not_in_load;dlllist.avg_dlls_per_proc;svcscan.nactive;ldrmodules.not_in_init_avg,0

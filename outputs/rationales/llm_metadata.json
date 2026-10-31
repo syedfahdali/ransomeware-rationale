@@ -1,0 +1,25 @@
+{
+  "backend": "agent_queue",
+  "generator": "agent_queue:freebuff-desktop-agent",
+  "model_id": "freebuff-desktop-agent",
+  "temperature": 0.2,
+  "prompt_versions": {
+    "T": "template",
+    "P0": "v0_zero_shot",
+    "P0R": "v2_rules_fewshot",
+    "P2": "v2_rules_fewshot",
+    "S2": "v2_rules_fewshot",
+    "S2R": "template"
+  },
+  "arms": [
+    "T",
+    "P0",
+    "P0R",
+    "P2",
+    "S2",
+    "S2R"
+  ],
+  "repair_rounds": 2,
+  "generated_at": "2026-10-11T08:07:15+00:00",
+  "note": "agent_queue: the generator is the coding agent's underlying model, which may be closed-weight; these are NOT open-weight results."
+}

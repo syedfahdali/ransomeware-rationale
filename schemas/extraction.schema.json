@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ExtractedClaims",
+  "description": "Claim-extraction output for prose rationales (spec 7.3 claim schema; the generator-level verdict is inferred separately).",
+  "type": "object",
+  "required": ["claims"],
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["feature", "direction", "text"],
+        "properties": {
+          "feature": {"type": "string"},
+          "direction": {"enum": ["toward_ransomware", "toward_benign"]},
+          "level": {"enum": ["very_low", "low", "typical", "high", "very_high", null]},
+          "value_stated": {"type": ["number", "null"]},
+          "text": {"type": "string"}
+        }
+      }
+    }
+  }
+}

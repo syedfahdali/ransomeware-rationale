@@ -1,0 +1,114 @@
+[
+  {
+    "role": "fewshot_ransomware",
+    "row_uid": "row_032968",
+    "evidence_table": "VERDICT: ransomware\nCALIBRATED PROBABILITY: 0.924  (decision threshold 0.500)\n\nRANKED EVIDENCE (most influential first). You may only mention these features:\n1. dlllist.avg_dlls_per_proc -- value 38.8 | level low | 24.1th percentile of training data | direction toward_ransomware | Average number of loaded DLLs per process.\n2. handles.nthread -- value 839.0 | level typical | 47.8th percentile of training data | direction toward_ransomware | Number of open thread handles.\n3. handles.nfile -- value 658.0 | level typical | 32.0th percentile of training data | direction toward_ransomware | Number of open file handles.\n4. ldrmodules.not_in_load_avg -- value 0.02808 | level low | 11.9th percentile of training data | direction toward_ransomware | Average per process of modules absent from the load list.\n5. malfind.ninjections -- value 4.00 | level typical | 67.0th percentile of training data | direction toward_ransomware | Number of memory regions flagged as injected/executable-writable anomalies (Volatility malfind).\n6. handles.nsemaphore -- value 648.0 | level typical | 39.0th percentile of training data | direction toward_ransomware | Number of open semaphore handles.",
+    "answer_prose": "The classifier predicts ransomware with probability 0.924. The most influential feature is dlllist.avg_dlls_per_proc (38.8), which is low compared with training data and pushed the decision toward ransomware. handles.nthread (839.0, typical) and handles.nfile (658.0, typical) also pushed toward ransomware, as did handles.nsemaphore (648.0, typical). ldrmodules.not_in_load_avg (0.02808, low) and malfind.ninjections (4.00, typical) contributed toward the verdict as well.",
+    "answer_structured": {
+      "verdict": "ransomware",
+      "probability_stated": 0.924,
+      "confidence_statement": null,
+      "claims": [
+        {
+          "feature": "dlllist.avg_dlls_per_proc",
+          "direction": "toward_ransomware",
+          "level": "low",
+          "value_stated": 38.8,
+          "text": "dlllist.avg_dlls_per_proc is low (38.8) and pushed the decision toward ransomware."
+        },
+        {
+          "feature": "handles.nthread",
+          "direction": "toward_ransomware",
+          "level": "typical",
+          "value_stated": 839.0,
+          "text": "handles.nthread is typical (839.0) and pushed the decision toward ransomware."
+        },
+        {
+          "feature": "handles.nfile",
+          "direction": "toward_ransomware",
+          "level": "typical",
+          "value_stated": 658.0,
+          "text": "handles.nfile is typical (658.0) and pushed the decision toward ransomware."
+        },
+        {
+          "feature": "ldrmodules.not_in_load_avg",
+          "direction": "toward_ransomware",
+          "level": "low",
+          "value_stated": 0.02808,
+          "text": "ldrmodules.not_in_load_avg is low (0.02808) and pushed the decision toward ransomware."
+        },
+        {
+          "feature": "malfind.ninjections",
+          "direction": "toward_ransomware",
+          "level": "typical",
+          "value_stated": 4.0,
+          "text": "malfind.ninjections is typical (4.00) and pushed the decision toward ransomware."
+        },
+        {
+          "feature": "handles.nsemaphore",
+          "direction": "toward_ransomware",
+          "level": "typical",
+          "value_stated": 648.0,
+          "text": "handles.nsemaphore is typical (648.0) and pushed the decision toward ransomware."
+        }
+      ],
+      "summary": "The classifier predicts ransomware with probability 0.924, driven mainly by a low average number of loaded DLLs per process, typical counts of open thread, file and semaphore handles, a low average of modules missing from the load list, and typical malfind injections."
+    }
+  },
+  {
+    "role": "fewshot_benign",
+    "row_uid": "row_007706",
+    "evidence_table": "VERDICT: benign\nCALIBRATED PROBABILITY: 0.029  (decision threshold 0.500)\n\nRANKED EVIDENCE (most influential first). You may only mention these features:\n1. svcscan.nservices -- value 395.0 | level very_high | 100.0th percentile of training data | direction toward_benign | Total number of Windows services enumerated in the memory image.\n2. pslist.avg_threads -- value 13.1 | level high | 80.9th percentile of training data | direction toward_benign | Average number of threads per process in the process list.\n3. dlllist.avg_dlls_per_proc -- value 51.8 | level high | 91.8th percentile of training data | direction toward_benign | Average number of loaded DLLs per process.\n4. handles.nsection -- value 414.0 | level typical | 74.0th percentile of training data | direction toward_benign | Number of open section (memory-mapped) handles.\n5. handles.nmutant -- value 398.0 | level high | 86.0th percentile of training data | direction toward_benign | Number of open mutant (mutex) handles.\n6. ldrmodules.not_in_load_avg -- value 0.03657 | level high | 76.0th percentile of training data | direction toward_benign | Average per process of modules absent from the load list.",
+    "answer_prose": "The classifier predicts benign with probability 0.029. The strongest contributor is svcscan.nservices (395.0), a very high value compared with training data, which pushed the decision toward benign. pslist.avg_threads (13.1, high) and dlllist.avg_dlls_per_proc (51.8, high) also pushed toward benign. handles.nsection (414.0, typical), handles.nmutant (398.0, high) and ldrmodules.not_in_load_avg (0.03657, high) were consistent with the benign verdict.",
+    "answer_structured": {
+      "verdict": "benign",
+      "probability_stated": 0.029,
+      "confidence_statement": null,
+      "claims": [
+        {
+          "feature": "svcscan.nservices",
+          "direction": "toward_benign",
+          "level": "very_high",
+          "value_stated": 395.0,
+          "text": "svcscan.nservices is very_high (395.0) and pushed the decision toward benign."
+        },
+        {
+          "feature": "pslist.avg_threads",
+          "direction": "toward_benign",
+          "level": "high",
+          "value_stated": 13.1,
+          "text": "pslist.avg_threads is high (13.1) and pushed the decision toward benign."
+        },
+        {
+          "feature": "dlllist.avg_dlls_per_proc",
+          "direction": "toward_benign",
+          "level": "high",
+          "value_stated": 51.8,
+          "text": "dlllist.avg_dlls_per_proc is high (51.8) and pushed the decision toward benign."
+        },
+        {
+          "feature": "handles.nsection",
+          "direction": "toward_benign",
+          "level": "typical",
+          "value_stated": 414.0,
+          "text": "handles.nsection is typical (414.0) and pushed the decision toward benign."
+        },
+        {
+          "feature": "handles.nmutant",
+          "direction": "toward_benign",
+          "level": "high",
+          "value_stated": 398.0,
+          "text": "handles.nmutant is high (398.0) and pushed the decision toward benign."
+        },
+        {
+          "feature": "ldrmodules.not_in_load_avg",
+          "direction": "toward_benign",
+          "level": "high",
+          "value_stated": 0.03657,
+          "text": "ldrmodules.not_in_load_avg is high (0.03657) and pushed the decision toward benign."
+        }
+      ],
+      "summary": "The classifier predicts benign with probability 0.029, driven mainly by a very high service count, high average thread and DLL counts, typical section handles, high mutant handles, and a high average of modules missing from the load list."
+    }
+  }
+]
